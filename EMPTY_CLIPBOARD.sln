@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33214.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EMPTY_CLIPBOARD", "EMPTY_CLIPBOARD.vcxproj", "{92B89A10-6266-4CCA-8B78-D9244BB92B7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92B89A10-6266-4CCA-8B78-D9244BB92B7B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{92B89A10-6266-4CCA-8B78-D9244BB92B7B}.Debug|Win32.Build.0 = Debug|Win32
+		{92B89A10-6266-4CCA-8B78-D9244BB92B7B}.Release|Win32.ActiveCfg = Release|Win32
+		{92B89A10-6266-4CCA-8B78-D9244BB92B7B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C96FBD0-EFDA-42BF-BFBD-FA7FCC33B25C}
+	EndGlobalSection
+EndGlobal
