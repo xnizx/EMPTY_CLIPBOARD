@@ -117,7 +117,7 @@ LPCSTR GetClipBoardService() {
 
 		if (strstr(AllServices.c_str(), serviceNameToFind.c_str()))
 		{
-			cstrf = cstr;
+			return cstr;
 			
 			std::cout << cstr << std::endl;
 		}
