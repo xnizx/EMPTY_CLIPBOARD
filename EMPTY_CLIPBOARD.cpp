@@ -128,7 +128,7 @@ LPCSTR GetClipBoardService() {
 
 	delete processesMap;
 	free(lpBytes);
-
+	return NULL;
 }
 
 void ClearClipBoard() {
@@ -212,7 +212,7 @@ void CEMPTY_CLIPBOARDApp::SetCurrentDirectoryToExistsFolder()
 	pLastOccur = _tcsrchr(tszModulePath, c);
 	nLen = size_t(pLastOccur - tszModulePath + 1);
 	
-	_tcsncpy(tszNewPath, tszModulePath, nLen);
+	_tcsncpy_s(tszNewPath, tszModulePath, nLen);
 
 	VERIFY(SetCurrentDirectory(tszNewPath));
 }
