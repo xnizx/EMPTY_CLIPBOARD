@@ -106,29 +106,26 @@ LPCSTR GetClipBoardService() {
 	);
 
 	ENUM_SERVICE_STATUS_PROCESS* lpServiceStatus = (ENUM_SERVICE_STATUS_PROCESS*)lpBytes;
-
+	const char* cstrf = NULL;
 	for (DWORD i = 0; i < servicesNum; i++) {
 
 		const char* cstr = lpServiceStatus[i].lpServiceName;
 
 		//WpnUserService_38a78
-		std::string s = cstr;
-
-
 		string AllServices = cstr;
 		string serviceNameToFind = "cbdhsvc_";
 
 		if (strstr(AllServices.c_str(), serviceNameToFind.c_str()))
 		{
-			return cstr;
-
+			cstrf = cstr;
+			
 			std::cout << cstr << std::endl;
 		}
 	}
 
 	delete processesMap;
 	free(lpBytes);
-	return NULL;
+	return cstrf;
 }
 
 void ClearClipBoard() {
